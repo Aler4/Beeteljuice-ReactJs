@@ -1,0 +1,43 @@
+.call-button {
+  width: 120px;
+  height: 40px;
+  padding: 5px;
+  background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: 'Caslon',sans-serif;
+  font-size: 1.2rem;
+  z-index: 1;
+  cursor: pointer;
+  transition: all ease-in .3s;
+  animation: btn-out .6s ease;
+}
+
+.btn-animation-active {
+  animation-name: btn-in;
+  animation-duration: .6s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btn-in {
+  from {
+    background-image: linear-gradient(315deg,#f39f86 0%,  #00b712 74%);
+
+  }
+  to {
+    background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  }
+}
+
+@keyframes btn-out {
+  from {
+    background-image: linear-gradient(315deg,#f39f86 0%,  #00b712 74%);
+
+  }
+  to {
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+  }
+}

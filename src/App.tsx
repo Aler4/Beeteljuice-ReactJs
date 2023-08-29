@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route,Routes} from "react-router-dom";
+import {Footer, Header} from './components';
+import {About, Home, News, Projects} from "./pages";
+import {observable} from "mobx";
 
-function App() {
+function App(){
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+        <div className="App">
+          <Header></Header>
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/news' element={<News />} />
+            </Routes>
+            <Footer/>
+        </div>
+
+
+      </BrowserRouter>
   );
-}
+};
 
 export default App;

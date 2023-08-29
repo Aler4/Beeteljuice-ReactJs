@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Caslon';
+  src: local('Calson'),url('./assets/fonts/CaslonAntique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Caslon_Italic';
+  src: url('./assets/fonts/CaslonAntique-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.calson-font {
+  font-family: 'Caslon', serif;
+}
+.calsonItalic-font {
+  font-family: 'Caslon_Italic';
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,ol,li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.list__topic {
+  font-size: 1.5rem;
+}
+.section__title {
+  font-size: 3.1rem;
+  font-family: 'Caslon', serif;
+  line-height: 1;
+  color: white;
+  margin-bottom: 50px;
+}
+.section__desc {
+  font-size: 2.1rem;
+  font-family: 'Caslon_Italic', serif;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+body {
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+  font-family: sans-serif,'Montserrat';
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1350px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+

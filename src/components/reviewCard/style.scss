@@ -1,0 +1,29 @@
+.review__card {
+  padding: 10px 15px;
+  height: 210px;
+  display: flex;
+  margin: 0 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #9ca3af;
+  border-radius: 10px;
+  .review__card-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .review__card-name {
+    width: 68%;
+    font-size: 1.5rem;
+  }
+  .review__card-text {
+    font-size: 1rem;
+    text-align: left;
+  }
+}

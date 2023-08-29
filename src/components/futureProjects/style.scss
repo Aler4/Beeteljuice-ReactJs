@@ -1,0 +1,65 @@
+.future-project {
+  background-color: #151515;
+  padding-top: 20px;
+
+
+
+  .future-project__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    .future-project__title {
+      font-size: 2rem;
+      text-align: center;
+      width: 100%;
+      cursor: pointer;
+    }
+    .future-project__btn {
+      font-size: 2.1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+     .open {
+      transform: rotate(45deg);
+       transition: transform ease-in .5s;
+    }
+
+  }
+  .future-project__description {
+    position: relative;
+    font-size: 1.5rem;
+    visibility: hidden;
+    padding: 20px;
+    height: 0;
+    opacity: 0;
+
+  }
+  .show {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    transition: opacity ease-in .5s;
+
+
+  }
+}
+
+.future-projects {
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  .future-projects__description {
+    font-size: 1.8rem;
+  }
+  .future-projects__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 50px;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+
+  }
+}

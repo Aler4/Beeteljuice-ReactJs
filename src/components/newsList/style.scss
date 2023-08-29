@@ -1,0 +1,13 @@
+.news-wrapper {
+  color: white;
+  padding-top: 140px;
+  padding-bottom: 50px;
+  .news-header {
+    padding-bottom: 70px;
+  }
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}

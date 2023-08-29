@@ -1,0 +1,45 @@
+.card {
+  width: 90%;
+  height: 260px;
+  display: flex;
+  padding: 30px 15px 15px 10px;
+  margin:  0 auto;
+  gap: 15px;
+  background: rgb(53,59,55);
+  background: linear-gradient(rgba(53,59,55,1) 49%, rgba(31,30,30,1) 82%, rgba(36,38,36,1) 100%, rgba(39,46,40,1) 100%, rgba(23,36,29,1) 100%);
+
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: ease 2ms;
+
+
+  &:hover {
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #12100e 0%,  #2b4162 74%);
+    transition: all ease-in .2ms;
+  }
+
+
+  .card-photo {
+    img{
+      width: 100px;
+      height: auto;
+    }
+  }
+  .card_text {
+    .card-title {
+      text-align: left;
+      font-size: 1.8rem;
+      line-height: 1;
+      padding-bottom: 10px;
+      color: #80811a;
+    }
+    .card-desc {
+      padding-right: 10px;
+      text-align: left;
+      font-size: 1.2rem;
+      color: darkkhaki;
+    }
+  }
+}

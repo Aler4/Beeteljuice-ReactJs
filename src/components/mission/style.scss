@@ -1,0 +1,26 @@
+.mission {
+  background-image: url('../../assets/images/about/miss-bg.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  box-shadow: inset 100vw 0 rgba(0,0,0, 0.6);
+  margin-top: 113px;
+  padding-bottom: 50px;
+  .mission__inner {
+    text-align: left;
+    padding-top: 100px;
+     color: #ffff;
+    .text-container {
+      font-size: 1.8rem;
+      .mission__text {
+        padding: 15px 0;
+      }
+      .mission__topic {
+        padding: 10px 0;
+        font-weight: bold;
+
+      }
+    }
+
+  }
+}

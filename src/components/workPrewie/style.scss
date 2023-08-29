@@ -1,0 +1,42 @@
+.example__wrapper {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  box-shadow: inset 4px 100vh rgba(0,0,0, 0.8);
+
+
+  .example__inner {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    @media (max-width: 860px) {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  .example__description {
+    text-align: left;
+    @media (max-width: 860px) {
+      text-align: center;
+    }
+    .example__description-text {
+      color: white;
+      padding: 0 10px 10px 0;
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+  }
+  .example-video_container {
+    display: flex;
+    border-radius: 20px;
+    height: fit-content;
+    overflow: hidden;
+    border: 1px solid white;
+    @media (max-width: 860px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .example-video {
+      cursor: pointer;
+
+    }
+  }
+}
